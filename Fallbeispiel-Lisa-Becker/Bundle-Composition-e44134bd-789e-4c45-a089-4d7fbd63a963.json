@@ -1,0 +1,2384 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Bundle"
+    ]
+  },
+  "type": "document",
+  "timestamp": "2025-05-26T17:05:22+02:00",
+  "id": "1db72ace-7e02-4c58-900b-b1075655a850",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:1db72ace-7e02-4c58-900b-b1075655a850"
+  },
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:e44134bd-789e-4c45-a089-4d7fbd63a963",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "e44134bd-789e-4c45-a089-4d7fbd63a963",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Composition|1.0.0"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "373942005",
+              "system": "http://snomed.info/sct",
+              "display": "Discharge summary (record artifact)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+            }
+          ]
+        },
+        "title": "Krankenhausentlassbrief",
+        "section": [
+          {
+            "title": "Entlassende Personen/Einrichtung",
+            "code": {
+              "coding": [
+                {
+                  "code": "entlassende_personen_einrichtung",
+                  "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_mio42",
+                  "display": "Entlassende Personen/Einrichtung",
+                  "version": "1.0.0"
+                }
+              ]
+            },
+            "section": [
+              {
+                "title": "Behandelnde Personen",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "behandelnde_person",
+                      "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_mio42",
+                      "display": "Behandelnde Person",
+                      "version": "1.0.0"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:83e1a931-0c5e-497f-8717-3c87b92cdc7c"
+                  }
+                ]
+              },
+              {
+                "title": "Verantwortliche Personen",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "verantworltiche_personen",
+                      "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_mio42",
+                      "display": "Verantwortliche Personen",
+                      "version": "1.0.0"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:8fd7cc49-04b3-4cda-8553-d40b899f3895"
+                  }
+                ]
+              },
+              {
+                "title": "Kontakt Entlassmanagement",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "718675005",
+                      "system": "http://snomed.info/sct",
+                      "display": "Management of inpatient discharge (procedure)",
+                      "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:ab60cabc-4b70-4b17-95c4-364818529e2d"
+                  }
+                ]
+              },
+              {
+                "title": "Leitende Personen",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "leitende_personen",
+                      "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_mio42",
+                      "display": "Leitende Personen",
+                      "version": "1.0.0"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:a782be75-03e8-48cc-a4e1-3bf23287c7bc"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Empfangende Personen",
+            "code": {
+              "coding": [
+                {
+                  "code": "empfangende_personen",
+                  "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_mio42",
+                  "display": "Empfangende Personen",
+                  "version": "1.0.0"
+                }
+              ]
+            },
+            "section": [
+              {
+                "title": "PatientIn",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "116154003",
+                      "system": "http://snomed.info/sct",
+                      "display": "Patient (person)",
+                      "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+                  }
+                ]
+              },
+              {
+                "title": "Versorgungsteam",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "versorgungsteam",
+                      "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_mio42",
+                      "display": "Versorgungsteam",
+                      "version": "1.0.0"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:cefccdf7-659a-42b8-8ccf-e309998448fc"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Falldaten",
+            "code": {
+              "coding": [
+                {
+                  "code": "866144008",
+                  "system": "http://snomed.info/sct",
+                  "display": "Encounter note (record artifact)",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+              }
+            ]
+          },
+          {
+            "title": "Aufnahme",
+            "code": {
+              "coding": [
+                {
+                  "code": "371542009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Admission history and physical report (record artifact)",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                }
+              ]
+            },
+            "section": [
+              {
+                "title": "Klinischer Untersuchungsbefund",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "55286-9",
+                      "system": "http://loinc.org",
+                      "display": "Physical exam by body areas",
+                      "version": "2.73"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:914a20fa-c273-4ab8-8413-a62b654e7a72"
+                  }
+                ]
+              },
+              {
+                "title": "Vitalzeichen und Körpermaße",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "1184593002",
+                      "system": "http://snomed.info/sct",
+                      "display": "Vital sign document section (record artifact)",
+                      "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:2350c24c-adde-49dd-86cc-54c30398f980"
+                  },
+                  {
+                    "reference": "urn:uuid:02de67b8-198e-42f9-b5eb-1c1f95ba44de"
+                  },
+                  {
+                    "reference": "urn:uuid:a1eda7f7-0dbd-4207-8bcf-ce56095dd377"
+                  },
+                  {
+                    "reference": "urn:uuid:93310b1f-3ba4-4435-85e3-4a728bafb04e"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Verlauf",
+            "code": {
+              "coding": [
+                {
+                  "code": "444754002",
+                  "system": "http://snomed.info/sct",
+                  "display": "Hospital inpatient progress report (record artifact)",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:a6b1d90b-b1c1-4222-9f70-e1c5d8cb24e3"
+              }
+            ]
+          },
+          {
+            "title": "Entlassung",
+            "code": {
+              "coding": [
+                {
+                  "code": "34105-7",
+                  "system": "http://loinc.org",
+                  "display": "Hospital Discharge summary",
+                  "version": "2.73"
+                }
+              ]
+            },
+            "section": [
+              {
+                "title": "Entlassungsbefund",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "10184-0",
+                      "system": "http://loinc.org",
+                      "display": "Hospital discharge physical findings Narrative",
+                      "version": "2.73"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Reizlose und trockene Wunde, resorbierbares Nahtmaterial in situ.</h1></div>"
+                }
+              },
+              {
+                "title": "Arbeitsunfähigkeitsbescheinigung",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "AU",
+                      "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_Administrative",
+                      "display": "Arbeitsunfähigkeitsbescheinigung",
+                      "version": "1.0.0"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:d82e5671-6636-486f-8996-082bfadb2f15"
+                  }
+                ]
+              },
+              {
+                "title": "Weiteres Vorgehen/Leistung",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "WVL",
+                      "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_Administrative",
+                      "display": "Weiteres Vorgehen/Leistung",
+                      "version": "1.0.0"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:023a2b1d-4ebc-4109-b8bf-11078ae58057"
+                  },
+                  {
+                    "reference": "urn:uuid:4b32a2fe-0556-4a99-98b2-6fb8a4c80fe4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Kontaktperson",
+            "code": {
+              "coding": [
+                {
+                  "code": "70862002",
+                  "system": "http://snomed.info/sct",
+                  "display": "Contact person (person)",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:c7a1ae35-1d61-48dd-afbd-5f040b041c5c"
+              }
+            ]
+          },
+          {
+            "title": "Einweisung",
+            "code": {
+              "coding": [
+                {
+                  "code": "1269557005",
+                  "system": "http://snomed.info/sct",
+                  "display": "Reason for hospital admission (observable entity)",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Symptomatische Cholezystolithiasis</h1></div>"
+            }
+          },
+          {
+            "title": "Anamnese",
+            "code": {
+              "coding": [
+                {
+                  "code": "1003642006",
+                  "system": "http://snomed.info/sct",
+                  "display": "Past medical history section (record artifact)",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                }
+              ]
+            },
+            "section": [
+              {
+                "title": "Abschnitt der Anamnese",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "35090-0",
+                      "system": "http://loinc.org",
+                      "display": "Patient history",
+                      "version": "2.73"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:5f1c8c30-48f0-4fa8-8821-c35b34574764"
+                  },
+                  {
+                    "reference": "urn:uuid:68dc72ee-702b-4454-a581-d6d734d9f628"
+                  }
+                ]
+              },
+              {
+                "title": "Anamnestische Diagnosen",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "10164-2",
+                      "system": "http://loinc.org",
+                      "display": "History of Present illness Narrative",
+                      "version": "2.73"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:9f8ede75-fd01-43e7-a3dc-34175b41502e"
+                  },
+                  {
+                    "reference": "urn:uuid:dcd5a10d-bd0c-49f8-a666-6ef553c6357f"
+                  }
+                ]
+              },
+              {
+                "title": "Vorherige Prozeduren",
+                "code": {
+                  "coding": [
+                    {
+                      "code": "1003640003",
+                      "system": "http://snomed.info/sct",
+                      "display": "History of past procedure section (record artifact)",
+                      "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "urn:uuid:62de0087-275d-4a53-8fd0-ae77e9ac2c77"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Infektion oder Besiedelung durch multiresistente Erreger",
+            "code": {
+              "coding": [
+                {
+                  "code": "SectionIBDME",
+                  "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_Section_Codes",
+                  "display": "Infektion oder Besiedelung durch multiresistente Erreger",
+                  "version": "1.0.0"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:f2481aef-e366-4a15-a874-f82d6aec58da"
+              }
+            ]
+          },
+          {
+            "title": "Prozeduren",
+            "code": {
+              "coding": [
+                {
+                  "code": "1269501001",
+                  "system": "http://snomed.info/sct",
+                  "display": "Procedure section (record artifact)",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:4f46b3ff-78d7-40cc-bbd6-9d75b7c39314"
+              }
+            ]
+          },
+          {
+            "title": "Dokumentenverweis/Anhang",
+            "code": {
+              "coding": [
+                {
+                  "code": "371524004",
+                  "system": "http://snomed.info/sct",
+                  "display": "Clinical report (record artifact)",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:d9898b72-33c9-4742-be14-74a5124f567c"
+              },
+              {
+                "reference": "urn:uuid:3f5c4826-9926-4648-9418-8c83d0fc8016"
+              }
+            ]
+          }
+        ],
+        "status": "preliminary",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "date": "2024-01-09T16:55:05Z",
+        "author": [
+          {
+            "reference": "urn:uuid:83e1a931-0c5e-497f-8717-3c87b92cdc7c"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:83e1a931-0c5e-497f-8717-3c87b92cdc7c",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "83e1a931-0c5e-497f-8717-3c87b92cdc7c",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_PractitionerRole|1.0.0"
+          ]
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+                "code": "06",
+                "version": "1.01",
+                "display": "Chirurgie"
+              }
+            ]
+          }
+        ],
+        "practitioner": {
+          "reference": "urn:uuid:d1a19179-0634-4458-8438-5dd37248a516"
+        },
+        "organization": {
+          "reference": "urn:uuid:6438988b-e964-406d-9533-39fde783afe3"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "SA",
+                "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care",
+                "version": "1.4.0",
+                "display": "Stationsärztin/-arzt"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6438988b-e964-406d-9533-39fde783afe3",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "6438988b-e964-406d-9533-39fde783afe3",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Organization|1.0.0"
+          ]
+        },
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "Hauptstraße 7"
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                    "valueString": "Hauptstraße"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "7"
+                  }
+                ]
+              }
+            ],
+            "city": "Neustadt",
+            "postalCode": "10000",
+            "country": "D"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "1500",
+                "system": "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+                "version": "1.4.0",
+                "display": "Allgemeine Chirurgie"
+              }
+            ]
+          }
+        ],
+        "name": "Krankenhaus Sonnenberg, Klinik für Allgemein- und Viszeralchirurgie",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 1118"
+          },
+          {
+            "system": "fax",
+            "value": "010 2228"
+          }
+        ],
+        "partOf": {
+          "reference": "urn:uuid:abc93d88-9205-4e01-b84b-e121033c4f9c"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:abc93d88-9205-4e01-b84b-e121033c4f9c",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "abc93d88-9205-4e01-b84b-e121033c4f9c",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Organization|1.0.0"
+          ]
+        },
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "Hauptstraße 7"
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                    "valueString": "Hauptstraße"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "7"
+                  }
+                ]
+              }
+            ],
+            "city": "Neustadt",
+            "postalCode": "10000",
+            "country": "D"
+          }
+        ],
+        "name": "Krankenhaus Sonnenberg",
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "KHS",
+                "system": "http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung",
+                "version": "3.0.0",
+                "display": "Krankenhaus"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 1117"
+          },
+          {
+            "system": "fax",
+            "value": "010 2227"
+          },
+          {
+            "system": "email",
+            "value": "chirurgie@khsonnenberg.kim.telematik"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d1a19179-0634-4458-8438-5dd37248a516",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "d1a19179-0634-4458-8438-5dd37248a516",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Practitioner|1.0.0"
+          ]
+        },
+        "name": [
+          {
+            "use": "official",
+            "prefix": [
+              "Dr. med."
+            ],
+            "_prefix": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                    "valueCode": "AC"
+                  }
+                ]
+              }
+            ],
+            "text": "Dr. med. Maria Schönberg",
+            "family": "Schönberg",
+            "_family": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                  "valueString": "Schönberg"
+                }
+              ]
+            },
+            "given": [
+              "Maria"
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PRN"
+                }
+              ]
+            },
+            "system": "https://gematik.de/fhir/sid/telematik-id",
+            "value": "TP9"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 1118"
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "071101",
+                  "system": "http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern",
+                  "version": "3.0.0",
+                  "display": "FA Allgemeine Chirurgie"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Encounter_Case_Records|1.0.0"
+          ]
+        },
+        "status": "finished",
+        "extension": [
+          {
+            "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_KHE_Discharge_Management_Performed",
+            "valueBoolean": true
+          }
+        ],
+        "hospitalization": {
+          "origin": {
+            "extension": [
+              {
+                "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_KHE_Reference_PractitionerRole",
+                "valueReference": {
+                  "reference": "urn:uuid:a528bbb9-dcf8-4b0a-a044-fd676e13e776"
+                }
+              }
+            ]
+          },
+          "dischargeDisposition": {
+            "extension": [
+              {
+                "url": "http://fhir.de/StructureDefinition/Entlassungsgrund",
+                "extension": [
+                  {
+                    "url": "ErsteUndZweiteStelle",
+                    "valueCoding": {
+                      "code": "01",
+                      "system": "http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle",
+                      "version": "1.4.0",
+                      "display": "Behandlung regulär beendet"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "admitSource": {
+            "coding": [
+              {
+                "code": "E",
+                "system": "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
+                "version": "1.4.0",
+                "display": "Einweisung durch einen Arzt"
+              }
+            ]
+          }
+        },
+        "class": {
+          "code": "IMP",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "display": "inpatient encounter",
+          "version": "3.0.0"
+        },
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "period": {
+          "start": "2024-01-05",
+          "end": "2024-01-09"
+        },
+        "reasonCode": [
+          {
+            "text": "Symptomatische Cholezystolithiasis"
+          }
+        ],
+        "diagnosis": [
+          {
+            "condition": {
+              "reference": "urn:uuid:9f8ede75-fd01-43e7-a3dc-34175b41502e"
+            },
+            "use": {
+              "coding": [
+                {
+                  "code": "referral-diagnosis",
+                  "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
+                  "version": "1.4.0",
+                  "display": "Überweisungsdiagnose"
+                },
+                {
+                  "code": "AD",
+                  "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                  "version": "1.4.0",
+                  "display": "Admission diagnosis"
+                }
+              ]
+            }
+          },
+          {
+            "condition": {
+              "reference": "urn:uuid:4715327e-006f-4e39-be37-7f9d85c6e08d"
+            },
+            "use": {
+              "coding": [
+                {
+                  "code": "treatment-diagnosis",
+                  "system": "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
+                  "version": "1.4.0",
+                  "display": "Behandlungsrelevante Diagnosen"
+                },
+                {
+                  "code": "DD",
+                  "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+                  "version": "1.4.0",
+                  "display": "Discharge diagnosis"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9f8ede75-fd01-43e7-a3dc-34175b41502e",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "9f8ede75-fd01-43e7-a3dc-34175b41502e",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Condition_Diagnosis|1.0.0"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "K80.20",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Gallenblasenstein ohne Cholezystitis: Ohne Angabe einer Gallenwegsobstruktion",
+              "version": "2020"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "e4e1a43e-4ea0-4d4e-89b8-047d61602888",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Patient|1.0.0"
+          ]
+        },
+        "name": [
+          {
+            "use": "official",
+            "text": "Lisa Becker",
+            "family": "Becker",
+            "_family": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                  "valueString": "Becker"
+                }
+              ]
+            },
+            "given": [
+              "Lisa"
+            ]
+          }
+        ],
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "Schulstraße 4"
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                    "valueString": "Schulstraße"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "4"
+                  }
+                ]
+              }
+            ],
+            "city": "Neustadt",
+            "postalCode": "10000",
+            "country": "D"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 11104"
+          },
+          {
+            "system": "phone",
+            "value": "0164 11041104"
+          },
+          {
+            "system": "email",
+            "value": "lisa.becker@beispielmail.de"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1982-12-02",
+        "maritalStatus": {
+          "coding": [
+            {
+              "code": "M",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+              "display": "Married"
+            }
+          ]
+        },
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "code": "de-DE",
+                  "system": "urn:ietf:bcp:47",
+                  "version": "4.0.1",
+                  "display": "German (Germany)"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4715327e-006f-4e39-be37-7f9d85c6e08d",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4715327e-006f-4e39-be37-7f9d85c6e08d",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Condition_Diagnosis|1.0.0"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "K80.40",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Gallengangsstein mit Cholezystitis: Ohne Angabe einer Gallenwegsobstruktion",
+              "version": "2020"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a6b1d90b-b1c1-4222-9f70-e1c5d8cb24e3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a6b1d90b-b1c1-4222-9f70-e1c5d8cb24e3",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Section_Inpatient_Stay|1.0.0"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "KHV",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_Administrative",
+              "display": "Krankenhausverlauf",
+              "version": "1.0.0"
+            }
+          ],
+          "text": "Verlauf"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "valueString": "Die Patientin wurde aufgrund rezidivierender Gallenkoliken über die Chirurgische Sprechstunde stationär aufgenommen. Der sonografische Nachweis eines Gallensteinleidens führte zur Indikationsstellung einer laparoskopischen Cholezystektomie. Nach entsprechender Vorbereitung und ausführlicher Aufklärung über die Notwendigkeit sowie die potenziellen Risiken der Operation unterzog sich die Patientin, Frau Becker, am 05.01.2024 einer laparoskopischen Cholezystektomie in komplikationsfreier Allgemeinanästhesie. Intraoperativ zeigte sich eine Cholezystitis bei Cholezystolithiasis. Der postoperative Verlauf verlief unkompliziert. Sowohl der Kostaufbau als auch die Mobilisation konnten unter angemessener Analgesie und Thromboembolieprophylaxe mit Enoxaparin 40 mg/Tag reibungslos durchgeführt werden. Bei der Aufnahme wiesen die Entzündungsparameter leichte Erhöhungen auf, die im Verlauf rückläufig waren. Die gastrointestinale Funktion normalisierte sich ordnungsgemäß, und die Wundverhältnisse zeigten keine Anzeichen einer Infektion. Die Wundheilung erfolgte ohne Komplikationen."
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c7a1ae35-1d61-48dd-afbd-5f040b041c5c",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "c7a1ae35-1d61-48dd-afbd-5f040b041c5c",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_RelatedPerson_Contact_Person|1.0.0"
+          ]
+        },
+        "name": [
+          {
+            "use": "official",
+            "text": "Martin Becker",
+            "family": "Becker",
+            "_family": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                  "valueString": "Becker"
+                }
+              ]
+            },
+            "given": [
+              "Martin"
+            ]
+          }
+        ],
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "Schulstraße 4"
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                    "valueString": "Schulstraße"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "4"
+                  }
+                ]
+              }
+            ],
+            "city": "Neustadt",
+            "postalCode": "10000",
+            "country": "D"
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "relationship": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "version": "2.1.0",
+                "display": "Next-of-Kin"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 11104"
+          },
+          {
+            "system": "phone",
+            "value": "0164 22042204"
+          },
+          {
+            "system": "email",
+            "value": "martin.becker@beispielmail.de"
+          }
+        ],
+        "gender": "male"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f2481aef-e366-4a15-a874-f82d6aec58da",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f2481aef-e366-4a15-a874-f82d6aec58da",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Infection_By_Multi_Resistant_Pathogens|1.0.0"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "SectionIBDME",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_Section_Codes",
+              "display": "Infektion oder Besiedelung durch multiresistente Erreger",
+              "version": "1.0.0"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "valueBoolean": false
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4f46b3ff-78d7-40cc-bbd6-9d75b7c39314",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "4f46b3ff-78d7-40cc-bbd6-9d75b7c39314",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Procedure|1.0.0"
+          ]
+        },
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+            "valueDateTime": "2024-01-05"
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "code": "387713003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230131",
+              "display": "Surgical procedure (procedure)"
+            }
+          ],
+          "text": "Operationen"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "5-511.11",
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "version": "2023",
+              "display": "Operationen an Gallenblase und Gallenwegen: Cholezystektomie: Einfach, laparoskopisch: Ohne laparoskopische Revision der Gallengänge"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "performedDateTime": "2024-01-05"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d9898b72-33c9-4742-be14-74a5124f567c",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "d9898b72-33c9-4742-be14-74a5124f567c",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_DocumentReference|1.0.0"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://dvmd.de/fhir/CodeSystem/kdl",
+              "code": "DG020111",
+              "display": "Sonographiebefund",
+              "version": "2022"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "282290005",
+              "display": "Imaging interpretation (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+            }
+          ]
+        },
+        "status": "current",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "BEF",
+                "system": "http://ihe-d.de/CodeSystems/IHEXDSclassCode",
+                "display": "Befundbericht"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "description": "Befund und Erqebnis: Homogen strukturierte Leber ohne Nachweis suspekter fokaler Läsionen. Mäßige Steatose. Relativ große Gallenblase mit Konkrement, keine akuten Entzündungszeichen, keine Wandverdickung. Kein Hinweis auf Pericholecystitis. Die intra- und extrahepatischen Gallenwege sind nicht erweitert. Das Pankreas erscheint ebenfalls etwas fettinfiltriert, keine akuten Entzündungszeichen, keine Exsudatstraßen. Milz normal groß homogen strukturiert. Beide Nieren sind ebenfalls normal groß, gut atemverschieblich, nicht gestaut. Harnblase mäßig gefüllt, glatt berandet. Im Bauchraum keine freie Flüssigkeit.",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "image/png",
+              "data": "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",
+              "title": "Sonographie des Abdomens",
+              "creation": "2024-01-04"
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3f5c4826-9926-4648-9418-8c83d0fc8016",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "3f5c4826-9926-4648-9418-8c83d0fc8016",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_DocumentReference|1.0.0"
+          ]
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://dvmd.de/fhir/CodeSystem/kdl",
+              "code": "LB120103",
+              "display": "Laborbefund intern",
+              "version": "2022"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "277034006:704321009=386344002",
+              "display": "Test interpretation where Characterizes = Laboratory data interpretation",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+            }
+          ]
+        },
+        "status": "current",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "LAB",
+                "system": "http://ihe-d.de/CodeSystems/IHEXDSclassCode",
+                "display": "Laborergebnisse"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "data": "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Q3JlYXRpb25EYXRlIChEOjIwMjQwNTIyMTU1MDMwKzAyJzAwJykKL1Byb2R1Y2VyICgzLUhlaWdodHNcMjIyIEltYWdlIHRvIFBERiBDb252ZXJ0ZXIgU2hlbGwgNi4xNi4wLjIgXChodHRwOi8vd3d3LnBkZi10b29scy5jb21cKSkKPj4KZW5kb2JqCnhyZWYKMCAxMAowMDAwMDAwMDAwIDY1NTM1IGYNCjAwMDAwMTI0MjUgMDAwMDAgbg0KMDAwMDAxMjM2OCAwMDAwMCBuDQowMDAwMDA3MjI4IDAwMDAwIG4NCjAwMDAwMDAwMTUgMDAwMDAgbg0KMDAwMDAxMjIxOSAwMDAwMCBuDQowMDAwMDA3MjA4IDAwMDAwIG4NCjAwMDAwMTIwNzYgMDAwMDAgbg0KMDAwMDAxMjA5NiAwMDAwMCBuDQowMDAwMDEyNDc0IDAwMDAwIG4NCnRyYWlsZXIKPDwKL1NpemUgMTAKL1Jvb3QgMSAwIFIKL0luZm8gOSAwIFIKL0lEIFs8RjI4M0QwMkY5NjA2NUUxRDA4OEU0RTI4Q0IyQzYxNDU+IDxFQkFERThDMDVDNzM2NzRENkQzQzIxMTg3MzlCM0FCOD5dCj4+CnN0YXJ0eHJlZgoxMjc0MgolJUVPRgo=",
+              "title": "Laborbefund",
+              "creation": "2024-01-09"
+            }
+          }
+        ],
+        "context": {
+          "encounter": [
+            {
+              "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8fd7cc49-04b3-4cda-8553-d40b899f3895",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "8fd7cc49-04b3-4cda-8553-d40b899f3895",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_PractitionerRole|1.0.0"
+          ]
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+                "code": "06",
+                "version": "1.01",
+                "display": "Chirurgie"
+              }
+            ]
+          }
+        ],
+        "practitioner": {
+          "reference": "urn:uuid:aa2a99ef-f065-4b6b-b63e-0b4939c0f573"
+        },
+        "organization": {
+          "reference": "urn:uuid:6438988b-e964-406d-9533-39fde783afe3"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "OA",
+                "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care",
+                "version": "1.4.0",
+                "display": "Oberärztin/-arzt"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:aa2a99ef-f065-4b6b-b63e-0b4939c0f573",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "aa2a99ef-f065-4b6b-b63e-0b4939c0f573",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Practitioner|1.0.0"
+          ]
+        },
+        "name": [
+          {
+            "use": "official",
+            "prefix": [
+              "Dr. med."
+            ],
+            "_prefix": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                    "valueCode": "AC"
+                  }
+                ]
+              }
+            ],
+            "text": "Dr. med. Thomas Hubbeling",
+            "family": "Hubbeling",
+            "_family": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                  "valueString": "Hubbeling"
+                }
+              ]
+            },
+            "given": [
+              "Thomas"
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PRN"
+                }
+              ]
+            },
+            "system": "https://gematik.de/fhir/sid/telematik-id",
+            "value": "TP7"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 1118"
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "071101",
+                  "system": "http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern",
+                  "version": "3.0.0",
+                  "display": "FA Allgemeine Chirurgie"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ab60cabc-4b70-4b17-95c4-364818529e2d",
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "ab60cabc-4b70-4b17-95c4-364818529e2d",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_HealthcareService_Contact_Discharge_Management|1.0.0"
+          ]
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "718675005",
+                "system": "http://snomed.info/sct",
+                "display": "Management of inpatient discharge (procedure)",
+                "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+              }
+            ]
+          }
+        ],
+        "availableTime": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_KHE_Contact_Details",
+                "valueString": "Montag bis Freitag in der Zeit von 09:00 bis 19:00, Samstag 10:00 bis 14:00, Sonntag 10:00 bis 14:00 Uhr"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 11178"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a782be75-03e8-48cc-a4e1-3bf23287c7bc",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "a782be75-03e8-48cc-a4e1-3bf23287c7bc",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_PractitionerRole|1.0.0"
+          ]
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+                "code": "06",
+                "version": "1.03",
+                "display": "Chirurgie"
+              }
+            ]
+          }
+        ],
+        "practitioner": {
+          "reference": "urn:uuid:e23a1918-e11d-42ff-8cf6-661e2d7d9263"
+        },
+        "organization": {
+          "reference": "urn:uuid:6438988b-e964-406d-9533-39fde783afe3"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "CA",
+                "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care",
+                "version": "1.4.0",
+                "display": "Chefärztin/-arzt"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e23a1918-e11d-42ff-8cf6-661e2d7d9263",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "e23a1918-e11d-42ff-8cf6-661e2d7d9263",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Practitioner|1.0.0"
+          ]
+        },
+        "name": [
+          {
+            "use": "official",
+            "prefix": [
+              "PD Dr. med."
+            ],
+            "_prefix": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                    "valueCode": "AC"
+                  }
+                ]
+              }
+            ],
+            "text": "PD Dr. med. Lea Wagner",
+            "family": "Wagner",
+            "_family": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                  "valueString": "Wagner"
+                }
+              ]
+            },
+            "given": [
+              "Lea"
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PRN"
+                }
+              ]
+            },
+            "system": "https://gematik.de/fhir/sid/telematik-id",
+            "value": "TP8"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 1118"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cefccdf7-659a-42b8-8ccf-e309998448fc",
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "cefccdf7-659a-42b8-8ccf-e309998448fc",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_CareTeam|1.0.0"
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "participant": [
+          {
+            "role": [
+              {
+                "coding": [
+                  {
+                    "code": "HA",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care_Team",
+                    "display": "Hausarzt/-ärztin",
+                    "version": "1.0.0"
+                  }
+                ]
+              }
+            ],
+            "member": {
+              "reference": "urn:uuid:a528bbb9-dcf8-4b0a-a044-fd676e13e776"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a528bbb9-dcf8-4b0a-a044-fd676e13e776",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "a528bbb9-dcf8-4b0a-a044-fd676e13e776",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_PractitionerRole|1.0.0"
+          ]
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+                "code": "01",
+                "version": "1.03",
+                "display": "Allgemeinmedizin"
+              }
+            ]
+          }
+        ],
+        "practitioner": {
+          "reference": "urn:uuid:6ad0b197-1be6-4f8d-9acd-cd123b2b0c4e"
+        },
+        "organization": {
+          "reference": "urn:uuid:bbaef5c8-f18b-4f9e-a399-ebf50c583d3e"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "FA",
+                "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_Role_Care",
+                "version": "1.4.0",
+                "display": "Fachärztin/-arzt"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bbaef5c8-f18b-4f9e-a399-ebf50c583d3e",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "bbaef5c8-f18b-4f9e-a399-ebf50c583d3e",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Organization|1.0.0"
+          ]
+        },
+        "address": [
+          {
+            "type": "both",
+            "line": [
+              "Hauptstraße 6"
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                    "valueString": "Hauptstraße"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "6"
+                  }
+                ]
+              }
+            ],
+            "city": "Neustadt",
+            "postalCode": "10000",
+            "country": "D"
+          }
+        ],
+        "name": "Allgemeinmedizinische Praxis",
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "PRA",
+                "system": "http://ihe-d.de/CodeSystems/PatientBezogenenGesundheitsversorgung",
+                "version": "3.0.0",
+                "display": "Arztpraxis"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 1116"
+          },
+          {
+            "system": "fax",
+            "value": "010 2226"
+          },
+          {
+            "system": "email",
+            "value": "praxis@allgemeinmedizin-alessa-costa.de"
+          },
+          {
+            "system": "email",
+            "value": "allgemeinmedizin-alessa-costa@mio42.kim.telematik"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6ad0b197-1be6-4f8d-9acd-cd123b2b0c4e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "6ad0b197-1be6-4f8d-9acd-cd123b2b0c4e",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Practitioner|1.0.0"
+          ]
+        },
+        "name": [
+          {
+            "use": "official",
+            "prefix": [
+              "Dr. med."
+            ],
+            "_prefix": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                    "valueCode": "AC"
+                  }
+                ]
+              }
+            ],
+            "text": "Dr. med. Alessa Costa",
+            "family": "Costa",
+            "_family": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+                  "valueString": "Costa"
+                }
+              ]
+            },
+            "given": [
+              "Alessa"
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "LANR"
+                }
+              ]
+            },
+            "system": "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR",
+            "value": "666666601"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PRN"
+                }
+              ]
+            },
+            "system": "https://gematik.de/fhir/sid/telematik-id",
+            "value": "TP6"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "010 1116"
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "01101",
+                  "system": "http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern",
+                  "version": "3.0.0",
+                  "display": "FA Allgemeinmedizin"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:914a20fa-c273-4ab8-8413-a62b654e7a72",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "914a20fa-c273-4ab8-8413-a62b654e7a72",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Clinical_Examination_Report|1.0.0"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "422813005",
+              "system": "http://snomed.info/sct",
+              "display": "Document section (record artifact)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+            }
+          ],
+          "text": "Aufnahmebefund"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "valueString": "Klinischer Untersuchungsbefund:\r\nPatientin in adäquatem Allgemein- und adipösem Ernährungszustand, Bewusstseinsklar, zu allen Qualitäten voll orientiert.\r\nKopf/Hals: Keine Halsvenenstauung.\r\nPulmo: Vesikuläres Atemgeräusch. Keine Rasselgeräusche, keine Spastik. Cor: Herzaktion tachykard, rhythmisch, Herztöne rein.\r\nAbdomen: Druckschmerz im rechten Oberbauch und epigastrisch, positives Murphy Zeichen, keine Abwehrspannung. Peristaltik regelrecht. Milz und Leber nicht vergrößert palpabel. Extremitäten: Keine Unterschenkelödeme."
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2350c24c-adde-49dd-86cc-54c30398f980",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2350c24c-adde-49dd-86cc-54c30398f980",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Blood_Pressure|1.0.0"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "version": "2.73",
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230131",
+              "code": "75367002",
+              "display": "Blood pressure (observable entity)"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "version": "2.73",
+                  "display": "Systolic blood pressure",
+                  "system": "http://loinc.org",
+                  "code": "8480-6"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230131",
+                  "code": "271649006",
+                  "display": "Systolic blood pressure (observable entity)"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "unit": "mm Hg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]",
+              "value": 130
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "version": "2.73",
+                  "display": "Diastolic blood pressure",
+                  "system": "http://loinc.org",
+                  "code": "8462-4"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "version": "http://snomed.info/sct/900000000000207008/version/20230131",
+                  "code": "271650006",
+                  "display": "Diastolic blood pressure (observable entity)"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "unit": "mm Hg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]",
+              "value": 85
+            }
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "effectiveDateTime": "2024-01-05T09:33:10Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:02de67b8-198e-42f9-b5eb-1c1f95ba44de",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "02de67b8-198e-42f9-b5eb-1c1f95ba44de",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Heart_Rate|1.0.0"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "version": "2.73",
+              "code": "8867-4",
+              "display": "Heart rate"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364075005",
+              "display": "Heart rate (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min",
+          "value": 85
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "effectiveDateTime": "2024-01-05T09:33:10Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a1eda7f7-0dbd-4207-8bcf-ce56095dd377",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a1eda7f7-0dbd-4207-8bcf-ce56095dd377",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Body_Height|1.0.0"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "version": "2.73",
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1153637007",
+              "display": "Body height (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "value": 163,
+          "code": "cm"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "effectiveDateTime": "2024-01-05T09:33:10Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:93310b1f-3ba4-4435-85e3-4a728bafb04e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "93310b1f-3ba4-4435-85e3-4a728bafb04e",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Body_Weight|1.0.0"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "version": "2.73",
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "27113001",
+              "display": "Body weight (observable entity)",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "value": 80,
+          "code": "kg",
+          "unit": "kg"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "effectiveDateTime": "2024-01-05T09:30:10Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d82e5671-6636-486f-8996-082bfadb2f15",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d82e5671-6636-486f-8996-082bfadb2f15",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Incapacity_To_Work|1.0.0"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "AU",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_Administrative",
+              "display": "Arbeitsunfähigkeitsbescheinigung",
+              "version": "1.0.0"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "valuePeriod": {
+          "start": "2024-01-05",
+          "end": "2024-01-12"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:023a2b1d-4ebc-4109-b8bf-11078ae58057",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "023a2b1d-4ebc-4109-b8bf-11078ae58057",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_CarePlan|1.0.0"
+          ]
+        },
+        "status": "active",
+        "intent": "proposal",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "activity": [
+          {
+            "detail": {
+              "code": {
+                "text": "Weiteres Prozedere und Empfehlungen: Wir entlassen Frau Becker bei Wohlbefinden und infektionsfreien Wundverhältnissen in die ambulante Weiterbehandlung nach Hause. Wir bitten um eine Befundkontrolle sowie die Anpassung der Schmerzmedikation im Verlauf. Das Nahtmaterial muss bei Verwendung von selbstresorbierbaren Fäden nicht entfernt werden. Wir empfehlen zunächst noch körperliche Schonung und leichte Kost. Im weiteren Verlauf sind keine speziellen diätetischen Maßnahmen zu beachten. Bei Komplikationen oder Problemen ist jederzeit eine Wiedervorstellung der Patientin über die Rettungsstelle unseres Hauses möglich."
+              },
+              "status": "completed"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4b32a2fe-0556-4a99-98b2-6fb8a4c80fe4",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4b32a2fe-0556-4a99-98b2-6fb8a4c80fe4",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_CarePlan|1.0.0"
+          ]
+        },
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        },
+        "activity": [
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "code": "373873005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Pharmaceutical / biologic product (product)",
+                    "version": "http://snomed.info/sct/900000000000207008/version/20230131"
+                  }
+                ],
+                "text": "Folgerezepte für Candesartan 8 mg Tabletten sowie Novaminsulfon 500 mg Filmabletten"
+              },
+              "status": "in-progress"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5f1c8c30-48f0-4fa8-8821-c35b34574764",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5f1c8c30-48f0-4fa8-8821-c35b34574764",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Section_Anamnesis|1.0.0"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "35090-0",
+              "system": "http://loinc.org",
+              "display": "Patient history",
+              "version": "2.73"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "valueString": "Aktuelle Anamnese: Frau Becker kommt zur elektiven Cholezystektomie nach prästationärer Vorstellung in der viszeralchirurgischen Sprechstunde. Sie berichtet von zunehmenden kolikartigen Schmerzen im rechten Oberbauch über die letzten 2-3 Monate. Bereits seit Jahren sei eine Cholezystolithiasis bekannt, die Symptome waren bislang allerdings eher sporadisch und mild gewesen. Fieber, Schüttelfrost oder andere akute Infektionszeichen werden verneint."
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:68dc72ee-702b-4454-a581-d6d734d9f628",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "68dc72ee-702b-4454-a581-d6d734d9f628",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Section_Anamnesis|1.0.0"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "35090-0",
+              "system": "http://loinc.org",
+              "display": "Patient history",
+              "version": "2.73"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "valueString": "Sozialanamnese: Verheiratet, Ehemann (=Kontaktperson) und 6-jährige Tochter, Adresszusatz 2.OG."
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dcd5a10d-bd0c-49f8-a666-6ef553c6357f",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "dcd5a10d-bd0c-49f8-a666-6ef553c6357f",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Condition_Diagnosis|1.0.0"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "I10.90",
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "display": "Essentielle Hypertonie, nicht näher bezeichnet : Ohne Angabe einer hypertensiven Krise",
+              "version": "2020"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        },
+        "encounter": {
+          "reference": "urn:uuid:94c5b68b-f9c8-4e75-bc9d-9e8f43b6ee6a"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:62de0087-275d-4a53-8fd0-ae77e9ac2c77",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "62de0087-275d-4a53-8fd0-ae77e9ac2c77",
+        "meta": {
+          "profile": [
+            "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Procedure|1.0.0"
+          ]
+        },
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+            "valueDateTime": "2024-01-05"
+          }
+        ],
+        "performedAge": {
+          "extension": [
+            {
+              "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Stage_Life",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "255398004",
+                    "version": "http://snomed.info/sct/900000000000207008/version/20230131",
+                    "display": "Childhood (qualifier value)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "code": "387713003",
+              "system": "http://snomed.info/sct",
+              "version": "http://snomed.info/sct/900000000000207008/version/20230131",
+              "display": "Surgical procedure (procedure)"
+            }
+          ],
+          "text": "Operationen"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "5-470.10",
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "version": "2023",
+              "display": "Operationen an der Appendix: Appendektomie: Laparoskopisch: Absetzung durch (Schlingen)ligatur"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:e4e1a43e-4ea0-4d4e-89b8-047d61602888"
+        }
+      }
+    }
+  ]
+}
